@@ -1,0 +1,1 @@
+package com.grievancecampus.filter; import javax.servlet.*; import java.io.IOException; public class EncodingFilter implements Filter { public void doFilter(ServletRequest r,ServletResponse p,FilterChain c)throws IOException,ServletException {r.setCharacterEncoding("UTF-8");p.setCharacterEncoding("UTF-8");c.doFilter(r,p);} }
